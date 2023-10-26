@@ -1,4 +1,4 @@
-#Funcionamento
+# Funcionamento
 
 1. **Formulário HTML (`formulario.html`)**:
    - Quando você acessa a página `formulario.html` em um navegador, vê um formulário com dois campos: "Valor em USD" e "Moeda de Destino", além de um botão "Converter moeda".
