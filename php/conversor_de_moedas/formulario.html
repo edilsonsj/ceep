@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+</head>
+
+<body>
+    <h1>Conversor de Moedas</h1>
+
+    <form action="conversor_de_moedas.php" method="post">
+        <label for="valor_em_usd">Valor em USD</label>
+        <input type="number" name="valor_em_usd" id="valor_em_usd" min="1" required>
+
+        <label for="moeda_destino">Moeda Destino: </label>
+
+        <select name="moeda_destino" id="moeda_destino">
+
+            <option value="EUR">Euro</option>
+            <option value="BRL">Real Brasileiro</option>
+
+        </select>
+        
+        <input type="submit" value="Converter moeda">
+    </form>
+</body>
+
+</html>
