@@ -25,9 +25,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <title>Resultado da Conversão</title>
 
     <h1>Resultado da Conversão</h1>
-    <?php if (isset($valor_convertido)) : ?>
-        <p><?= $valor_em_usd ?> USD é equivalente a <?= $valor_convertido ?> <?= $moeda_nome ?>.</p>
-    <?php else : ?>
+    <?php if (isset($valor_convertido)) { ?>
+        <p><?php echo $valor_em_usd; ?> USD é equivalente a <?php echo $valor_convertido; ?> <?php echo $moeda_nome; ?>.</p>
+    <?php } else { ?>
         <p>Preencha o formulário para converter.</p>
-    <?php endif; ?>
+    <?php } ?>
     <a href="formulario.html">Voltar ao formulário</a>
+    
